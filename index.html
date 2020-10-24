@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Crystal DataOP</title>
-<link rel="shortcut icon" href="https://crystal-dataop.github.io/en//favicon.ico?v=1603536024253">
+<link rel="shortcut icon" href="https://crystal-dataop.github.io/en//favicon.ico?v=1603536579191">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://crystal-dataop.github.io/en//styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="Crystal DataOP - Atom Feed" href="https://crystal-dataop.github.io/en//atom.xml">
@@ -21,13 +21,14 @@
 
 
     <meta name="description" content="Data Analysis Engine of Big-Data and AI" />
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
   <body>
     <div class="main">
       <div class="main-content">
         <div class="site-header">
   <a href="https://crystal-dataop.github.io/en/">
-  <img class="avatar" src="https://crystal-dataop.github.io/en//images/avatar.png?v=1603536024253" alt="">
+  <img class="avatar" src="https://crystal-dataop.github.io/en//images/avatar.png?v=1603536579191" alt="">
   </a>
   <h1 class="site-title">
     Crystal DataOP
@@ -82,36 +83,50 @@
 </div>
 
     
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://crystal-dataop.github.io/en/post/intro/">
-        <h2 class="post-title">Hello Crystal</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2020-10-24
-        </span>
-        <span>
-          1 min read
-        </span>
         
-      </div>
-      
-      <div class="post-abstract">
-        <p>👏  Welcome to use <strong>Crystal</strong> ！<br>
+  
+    <div class="post-detail">
+      <article class="post">
+        
+        <div class="post-content-wrapper">
+          <div class="post-content">
+            <p>👏  Welcome to use <strong>Crystal</strong> ！<br>
 ✍️  <strong>Crystal</strong> A data analysis engine of big-data and AI. It can be used for offline analysis of massive data, and deploy for online retrieval in one stop.</p>
+<!-- more -->
+<h2 id="feature">Feature</h2>
+<ul>
+<li>Easy-to-use and expandable OP library for data analysis</li>
+<li>Support KV storage</li>
+<li>Support bitmap and vector index</li>
+<li>Support the use of HTTP+JSON protocol to build services</li>
+</ul>
+<h2 id="build">Build</h2>
+<p>Crystal depends on C++17. Tested on MacOS 10.15 currently, Linux support will be soon.</p>
+<pre><code>brew install asio double-conversion gflags omp  # for mac
 
-      </div>
-    </article>
-  
-</div>
+./deps.sh
+./build.sh
+cd _build &amp;&amp; make test
+</code></pre>
+<p>😘 Enjoy~</p>
 
-    
-        <div class="pagination-container">
+          </div>
+          <div class="toc-container">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#feature">Feature</a></li>
+<li><a href="#build">Build</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </article>
+    </div>
   
-  
-</div>
+
 
     
         <div class="site-footer">
@@ -123,5 +138,9 @@
 
       </div>
     </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+    </script>
   </body>
 </html>
